@@ -1,0 +1,13 @@
+name: "Мой первый CI"
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Проверка подключения
+        run: echo "Привет, я работаю на серверах GitHub!"
+        
